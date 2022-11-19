@@ -4,7 +4,6 @@ require("@nomiclabs/hardhat-etherscan");
 require('dotenv').config();
 
 const {
-  RINKEBY_API_URL,
   POLYGON_TESTNET_API_URL,
   BSC_TESTNET_API_URL,
   BSC_MAINNET_API_URL,
@@ -52,13 +51,6 @@ module.exports = {
       url: "http://127.0.0.1:8545"
     },
     hardhat: {
-    },
-    rinkeby: {
-      url: RINKEBY_API_URL,
-      allowUnlimitedContractSize: true,
-      accounts: [`0x${PRIVATE_KEY}`],
-      gas: 7000000,
-      gasPrice: 30000000000
     },
     bsc_mainnet: {
       url: BSC_MAINNET_API_URL,
